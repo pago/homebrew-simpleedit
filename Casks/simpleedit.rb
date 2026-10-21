@@ -7,8 +7,8 @@ cask "simpleedit" do
   arch arm: "-arm64", intel: ""
 
   version "0.26.0"
-  sha256 arm:   "387b87847dea91fc4f33e7beace09e0d9ed23b31df4f7d52cad6f7d6d2cc1892",
-         intel: "4c730b87306a0158e7187fc5e6bab16727d8b5c90e59600c92c10cd46c225e0d"
+  sha256 arm:   "62e35c7197580dc48c080cd6fdd7d33cc88f3587b943828fc97a42d5a169a0e4",
+         intel: "c0cd5fe7c6a5416287e10916e11f2c61153dddc4b2cb97ba25081f1eee7bf2f8"
 
   url "https://github.com/pago/simpleedit-releases/releases/download/v#{version}/SimpleEdit-#{version}#{arch}.dmg"
   name "SimpleEdit"
