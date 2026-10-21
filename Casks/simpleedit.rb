@@ -6,14 +6,14 @@ cask "simpleedit" do
   # Intel value is deliberately empty rather than "x86_64".
   arch arm: "-arm64", intel: ""
 
-  version "0.25.0"
-  sha256 arm:   "f7b7b4fe436058efd1da74fe57f02d49f894802cbcc31d4373a5525f311e1e2e",
-         intel: "2a145ae0a62cf54d5fa26f113d032d2e938843291ee84838e90f1e55aa568f89"
+  version "0.26.0"
+  sha256 arm:   "387b87847dea91fc4f33e7beace09e0d9ed23b31df4f7d52cad6f7d6d2cc1892",
+         intel: "4c730b87306a0158e7187fc5e6bab16727d8b5c90e59600c92c10cd46c225e0d"
 
-  url "https://github.com/pago/simpleedit/releases/download/v#{version}/SimpleEdit-#{version}#{arch}.dmg"
+  url "https://github.com/pago/simpleedit-releases/releases/download/v#{version}/SimpleEdit-#{version}#{arch}.dmg"
   name "SimpleEdit"
   desc "Opinionated agentic development environment"
-  homepage "https://github.com/pago/simpleedit"
+  homepage "https://github.com/pago/simpleedit-releases"
 
   livecheck do
     url :url
