@@ -6,9 +6,9 @@ cask "simpleedit" do
   # Intel value is deliberately empty rather than "x86_64".
   arch arm: "-arm64", intel: ""
 
-  version "0.28.0"
-  sha256 arm:   "e1cdb3b8aa24d13f792ff862f07c2a35cc1816ee68974af90de22aa8132f47ce",
-         intel: "31f21a14acd3dd4dfc13fe8507ba8af9601c9d5c92c87fbd6934168ded7b7b63"
+  version "0.29.0"
+  sha256 arm:   "5a2ad923c7b8515489e4d2913bc648a504effcdb381013c7110d73c95c4b52e1",
+         intel: "edd5a0a9ee73e18919f20d716f18681b29265bee64e1d7a7fce0e6ada4cacf09"
 
   url "https://github.com/pago/simpleedit-releases/releases/download/v#{version}/SimpleEdit-#{version}#{arch}.dmg"
   name "SimpleEdit"
