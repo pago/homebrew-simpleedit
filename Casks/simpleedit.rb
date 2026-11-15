@@ -6,9 +6,9 @@ cask "simpleedit" do
   # Intel value is deliberately empty rather than "x86_64".
   arch arm: "-arm64", intel: ""
 
-  version "0.29.0"
-  sha256 arm:   "5a2ad923c7b8515489e4d2913bc648a504effcdb381013c7110d73c95c4b52e1",
-         intel: "edd5a0a9ee73e18919f20d716f18681b29265bee64e1d7a7fce0e6ada4cacf09"
+  version "0.30.0"
+  sha256 arm:   "23f473137cbccd21f535209f090316255c4498d70d906d335d80f720fd8948b2",
+         intel: "39100d4ce0247f167a95947aae3aebda332863d843787a38b609cb6cd246fcc0"
 
   url "https://github.com/pago/simpleedit-releases/releases/download/v#{version}/SimpleEdit-#{version}#{arch}.dmg"
   name "SimpleEdit"
@@ -20,9 +20,10 @@ cask "simpleedit" do
     strategy :github_latest
   end
 
-  # LSMinimumSystemVersion of the packaged bundle is 12.0. The bare symbol means
-  # "Monterey or newer" (`maximum_macos:` is the upper-bound form).
-  depends_on macos: :monterey
+  # LSMinimumSystemVersion of the packaged bundle is 13.0 (Electron 44 dropped
+  # macOS 12). The bare symbol means "Ventura or newer" (`maximum_macos:` is the
+  # upper-bound form).
+  depends_on macos: :ventura
 
   app "SimpleEdit.app"
 
